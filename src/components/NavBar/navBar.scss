@@ -1,0 +1,63 @@
+@use '../../shared/globalStyles/vars';
+
+$searchbar-height: 4.5rem;
+
+.navbar {
+	&__container {
+		width: 100%;
+		height: 7rem;
+		background-color: vars.$color-yellow;
+	}
+
+	&__wrapper {
+		display: grid;
+		height: 100%;
+		grid-column-gap: vars.$size-2;
+		grid-template-columns: repeat(12, 1fr);
+	}
+
+	&__logo-container {
+		display: flex;
+		height: 100%;
+		align-items: center;
+		grid-column: 2 / 3;
+	}
+
+	&__logo {
+		display: block;
+	}
+
+	&__search-container {
+		display: flex;
+		align-items: center;
+		grid-column: 3 / 12;
+	}
+
+	&__searchbar {
+		display: flex;
+		width: 100%;
+		height: $searchbar-height;
+	}
+
+	&__input {
+		width: calc(100% - #{$searchbar-height});
+		height: 100%;
+		padding: vars.$size-1;
+		border: 0;
+		background: vars.$color-white;
+		border-radius: vars.$border-rad 0 0 vars.$border-rad;
+		color: vars.$color-gray-3;
+		font-size: 2.25rem;
+	}
+
+	&__btn {
+		display: flex;
+		width: $searchbar-height;
+		height: 100%;
+		align-items: center;
+		justify-content: center;
+		border: 0;
+		background: vars.$color-gray-1;
+		border-radius: 0 vars.$border-rad vars.$border-rad 0;
+	}
+}

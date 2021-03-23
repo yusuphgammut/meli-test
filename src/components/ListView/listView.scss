@@ -1,0 +1,73 @@
+@use '../../shared/globalStyles/vars';
+
+.listview {
+	&__container {
+		width: 100%;
+	}
+
+	&__wrapper {
+		display: grid;
+		grid-column-gap: vars.$size-2;
+		grid-template-columns: repeat(12, 1fr);
+	}
+
+	&__breadcrumb {
+		margin-top: vars.$size-2;
+		color: vars.$color-gray-2;
+		font-size: 0.875em;
+		grid-column: 2 / 12;
+	}
+
+	&__list {
+		padding: 0;
+		margin: vars.$size-2 0 0;
+		grid-column: 2 / 12;
+		list-style-type: none;
+	}
+
+	&__item {
+		width: 100%;
+		margin-bottom: vars.$size-2;
+		background-color: vars.$color-white;
+		border-radius: vars.$border-rad;
+
+		& > a {
+			display: flex;
+			width: 100%;
+			height: 100%;
+			padding: vars.$size-2;
+			color: vars.$color-gray-4;
+			text-decoration: none;
+		}
+	}
+
+	&__img {
+		height: 200px;
+	}
+
+	&__info {
+		width: calc(100% - 200px - #{vars.$size-2});
+		margin-left: vars.$size-2;
+	}
+
+	&__price {
+		margin: vars.$size-2 0 vars.$size-4;
+		font-size: 1.5em;
+		font-weight: normal;
+	}
+
+	&__shipping {
+		margin-left: vars.$size-2;
+	}
+
+	&__title {
+		margin: 0 0 vars.$size-2;
+		font-size: 1.125em;
+		font-weight: normal;
+	}
+
+	&__condition {
+		font-size: 1em;
+		font-weight: normal;
+	}
+}

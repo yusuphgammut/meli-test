@@ -1,0 +1,83 @@
+@use '../../shared/globalStyles/vars';
+
+.productview {
+	&__container {
+		width: 100%;
+	}
+
+	&__wrapper {
+		display: grid;
+		grid-column-gap: vars.$size-2;
+		grid-template-columns: repeat(12, 1fr);
+	}
+
+	&__breadcrumb {
+		margin-top: vars.$size-2;
+		color: vars.$color-gray-2;
+		font-size: 0.875em;
+		grid-column: 2 / 12;
+	}
+
+	&__product {
+		display: grid;
+		padding: vars.$size-4;
+		margin: vars.$size-2 0 vars.$size-10;
+		background-color: vars.$color-white;
+		border-radius: vars.$border-rad;
+		grid-column: 2 / 12;
+		grid-column-gap: vars.$size-2;
+		grid-template-columns: repeat(10, 1fr);
+	}
+
+	&__hero {
+		grid-column: 1 / 8;
+	}
+
+	&__description {
+		width: 100%;
+		padding-top: vars.$size-12;
+	}
+
+	&__desc-title {
+		margin: vars.$size-4 0;
+		font-size: 1.75em;
+	}
+
+	&__desc-p {
+		margin: vars.$size-4 0;
+		color: vars.$color-gray-3;
+		font-size: 1em;
+		font-weight: normal;
+		line-height: 1.4em;
+	}
+
+	&__info {
+		grid-column: 8 / 11;
+	}
+
+	&__qty {
+		font-size: 0.875em;
+	}
+
+	&__title {
+		font-size: 2em;
+		line-height: 1em;
+	}
+
+	&__price {
+		font-size: 2.875em;
+		font-weight: normal;
+	}
+
+	&__btn {
+		display: block;
+		width: 100%;
+		padding: vars.$size-2;
+		border: 0;
+		background: vars.$color-blue;
+		border-radius: vars.$border-rad;
+		color: vars.$color-white;
+		font-size: 1.125em;
+		font-weight: normal;
+	}
+}

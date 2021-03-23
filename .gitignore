@@ -1,0 +1,51 @@
+# Project structure
+/dist
+/build
+/dsgn
+/docs
+tags
+
+# testing
+/coverage
+/test/unit/coverage/
+
+# next.js
+/.next/
+/out/
+
+# Mac OS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# NPM
+node_modules
+.npm
+*.tgz
+
+# local env files
+.env.local
+.env.*.local
+
+# Log files
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw*
+*.vim
+
+# Sass
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map

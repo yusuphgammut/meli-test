@@ -1,0 +1,39 @@
+@use './vars';
+@use './utilities';
+
+@import '~normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/*
+ * From "reboot.css" https://gist.github.com/marharyta/b83a3683085eb42867bbcefb34687af8
+ * 1. Change from `box-sizing: content-box` so that `width` is not affected by `padding` or `border`.
+ * 2. Change the default font family in all browsers.
+ * 3. Correct the line height in all browsers.
+ * 4. Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.
+ * 5. Setting @viewport causes scrollbars to overlap content in IE11 and Edge, so we force a non-overlapping, non-auto-hiding scrollbar to counteract.
+ * 6. Change the default tap highlight to be completely transparent in iOS.
+ */
+*,
+*::before,
+*::after {
+	box-sizing: border-box; /* 1 */
+}
+
+/* stylelint-disable property-no-vendor-prefix */
+html {
+	font-family: sans-serif; /* 2 */
+	font-size: 8px; /* Base for rem dimensions */
+	line-height: 1.8em; /* 3 */
+	-ms-overflow-style: scrollbar; /* 5 */
+	-webkit-tap-highlight-color: transparent; /* 6 */
+	-webkit-text-size-adjust: 100%; /* 4 */
+	-ms-text-size-adjust: 100%; /* 4 */
+}
+/* stylelint-enable property-no-vendor-prefix */
+
+body {
+	background-color: vars.$color-gray-1;
+	color: vars.$color-gray-4;
+	font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+	font-size: 2rem; /* 16px */
+}

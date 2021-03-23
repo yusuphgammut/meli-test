@@ -1,0 +1,3 @@
+# By default eslint ignores js dot files in the root folder.
+# With the exclamation mark we revert (negate) that.
+!/.*.js
